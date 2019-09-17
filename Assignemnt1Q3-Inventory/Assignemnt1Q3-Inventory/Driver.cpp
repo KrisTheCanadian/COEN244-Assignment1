@@ -42,7 +42,6 @@ int main() {
 
 	cout << "stock number of " << n3 << " is: " << i1.get_stock(n3) << endl;
 
-	cout << "stock number of " << n2 << " is: " << i1.get_stock(n2) << endl;
 
 	cout << "row number of " << n3 << " is: " << i1.row_no(n3) << endl;
 
