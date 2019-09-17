@@ -34,7 +34,7 @@ using namespace std;
 
 	int Inventory::get_stock(char* product_name) {
 		int row = row_no(product_name);
-		return arr[row][1];
+		return arr[row][0];
 	}
 
 	double Inventory::order(char* product_name, int quantity) {
@@ -45,6 +45,7 @@ using namespace std;
 		else {
 			int row = row_no(product_name);
 			arr[row][0] = arr[row][0] - quantity;
+			
 			double price = quantity * arr[row][1];
 			return price;
 		}
@@ -52,14 +53,13 @@ using namespace std;
 
 	bool Inventory::new_product(char* product_name, int quantity, double price) {
 
-		int row;
-		//LOOK FOR EMPTY ARRAY
+		int row = -1;
+		
 		for (int num = 0; num < SIZE; num++) {
-			if (name_array[num][0] == 0) {
+			if (name_array[num][0] == 48) { //looking for that null terminator (looking for '/0' did not work)
 				row = num;
 				break; //stop looking at the name if a character is not the same.
 			}
-			return false; //no rows are empty
 		}
 
 		if (row != -1) {
