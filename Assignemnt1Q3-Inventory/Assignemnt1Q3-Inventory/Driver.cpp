@@ -27,6 +27,8 @@ int main() {
 
 	cout << "stock number of " << n2 << " is: " << i1.get_stock(n2) << endl;
 
+	cout << "row number of " << n2 << " is: " << i1.row_no(n2) << endl;
+
 	char n3[7] = { 'A','p','p','l','e','s',0 };
 	int q3 = 15;
 	double p3 = 5.25;
@@ -40,8 +42,14 @@ int main() {
 
 	cout << "stock number of " << n3 << " is: " << i1.get_stock(n3) << endl;
 
+	cout << "stock number of " << n2 << " is: " << i1.get_stock(n2) << endl;
+
+	cout << "row number of " << n3 << " is: " << i1.row_no(n3) << endl;
+
 	cout << "removing: " << n2 << endl;
 	i1.discontinued_product(n2);
+
+	
 
 
 
