@@ -1,4 +1,5 @@
-COEN 244 Assignment 1
+#COEN 244 Assignment 1 - Fall 2019
 
-Kristopher Beauchemin 40109581
-Hadrien Ovize
+## Created By:
+**Kristopher Beauchemin 40109581**
+**Hadrien Ovize**
