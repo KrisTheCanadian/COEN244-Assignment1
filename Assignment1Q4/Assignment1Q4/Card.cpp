@@ -33,11 +33,29 @@ void Card::display() {
 	else {
 		string face;
 		switch (value) {
-			case 1: face = "Ace";
-			case 11: face = "Jack";
-			case 12: face = "Queen";
-			case 13: face = "King";
-			default: face = "ERROR";
+			case 1: 
+			{
+				face = "Ace";
+				break; 
+			}
+			case 11: 
+			{ 
+				face = "Jack";
+				break; 
+			}
+			case 12: 
+			{ 
+				face = "Queen";
+				break;
+			}
+			case 13: {
+				face = "King"; 
+				break; 
+			}
+			default: {
+				face = "ERROR"; 
+				break;
+			}
 		}
 		
 		cout << "[CARD] " << face << "-" << get_suit() << endl;

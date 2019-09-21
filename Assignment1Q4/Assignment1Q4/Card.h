@@ -3,7 +3,7 @@ class Card
 {
 private:
 	int value; 
-	char suit[8] = {};
+	char suit[8];
 	static const int SIZE = 8;
 public:
 	void set_suit(char*);
